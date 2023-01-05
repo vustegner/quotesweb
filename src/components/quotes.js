@@ -23,7 +23,7 @@ class Quotes extends Component {
     }
 
     getData = () => {
-        fetch('http://quotes-rhn-engineering-dschenck-dev.apps.sandbox.x8i5.p1.openshiftapps.com/quotes/random')
+        fetch('http://quotes-stegner-hzd-dev.apps.sandbox.x8i5.p1.openshiftapps.com/quotes/random')
         .then(response => response.json())
             .then(data => {
                 this.setState({quote:data});
